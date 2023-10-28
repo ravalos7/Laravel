@@ -7,3 +7,11 @@ Hay muchas situaciones en las cuales la salida vía DD no es factible, ya sea qu
 Independiente del caso, esta herramienta permite tener una salida de depuración a pesar de que la consola del navegador no está disponible. Sólo instancie la clase, defina los parametros según su preferencia y active el tipo de depuración deseada (por base de datos, por consola, por archivo log). Luego olvídese del navegadador.
 
 ** Si utilizará la depuracion por bd, defina el formato de  fecha que tenga definido.
+
+Ejemplo con Log a tabla Debug_log:
+
+  $debug=new Debug();
+  $debug->stop=true;
+  $debug->logbd_clean();
+  $debug->set_title("nombres","filas","cantidad de filas");
+  $debug->log_bd($names_url, $rows, $numrows);
