@@ -16,6 +16,8 @@ Independiente del caso, esta herramienta permite tener una salida de depuración
 
 Ejemplo con Log a tabla Debug_log:
 
+
+
   $debug=new Debug();
   
   $debug->stop=true;
