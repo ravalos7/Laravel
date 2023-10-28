@@ -8,6 +8,12 @@ Independiente del caso, esta herramienta permite tener una salida de depuración
 
 ** Si utilizará la depuracion por bd, defina el formato de  fecha que tenga definido.
 
+         //  Definir formato DateTime según base de datos utilizada
+
+          $this->logdb_dateformat = "d-m-Y H:i:s";
+         
+        //--------------------------------------------------------------        
+
 Ejemplo con Log a tabla Debug_log:
 
   $debug=new Debug();
